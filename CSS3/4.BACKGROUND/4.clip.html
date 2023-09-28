@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clip</title>
+    <style>
+        div {
+            color: white;
+            font-size: 35px;
+            height: 300px;
+            width: 300px;
+            border: 10px double #000000;
+            padding: 20px;
+            background: url("2.jpg");
+            /* background-clip:border-box; */
+            /* -webkit-background-clip: border-box; */
+        }
+
+        .bo {
+            background-clip: border-box;
+
+        }
+
+        .pa {
+            background-clip: padding-box;
+
+        }
+
+        .co {
+            background-clip: content-box;
+            /* background-size: 200px 228px ; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>1.Border box</h1>
+    <div class="bo">kaoicjo naka</div>
+
+    <h1>2.Padding Box</h1>
+    <div class="pa">kaoicjo naka</div>
+
+    <h1>3.content-box</h1>
+    <div class="co">kaoicjo naka</div>
+
+</body>
+
+</html>

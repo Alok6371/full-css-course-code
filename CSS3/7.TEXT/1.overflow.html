@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .clip{
+            text-overflow: clip;
+            width: 50%;
+            padding: 2px 5px;
+            background: lightgreen;
+            /* Both are required */
+            overflow: hidden;
+            white-space: nowrap; /* use the no second line overflo*/
+        }
+        .ellipis{
+            text-overflow: ellipsis;
+            width: 30%;
+            padding: 2px 5px ;
+            background: lightblue;
+            /* Both are required */
+            overflow: hidden;
+            white-space:nowrap;
+        }
+        .cus{
+            text-overflow: '$$$';
+            width: 50%;
+            padding: 2px 5px;
+            background: lightyellow;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- **************************clip**************** -->
+    <h1>1.CLIP VALUE:<span>Here we can see the  </span></h1>
+    <p class="clip">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas alias assumenda.</p>
+
+    <!-- *****************ellipis************************* -->
+    <h1>2.ellipis value:</h1>
+    <p class="ellipis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, aspernatur ullam? Facilis, molestias voluptates. Ipsum repudiandae amet est ea facilis corrupti eum cupiditate omnis quae? Assumenda necessitatibus placeat non est quia odio tempore quos!</p>
+
+    <!-- *****************custom value************************* -->
+    <h1>3.custom value</h1>
+    <p class="cus">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero et sint, temporibus ab placeat perferendis minus sequi exercitationem soluta blanditiis impedit dicta suscipit non culpa, dignissimos voluptate maxime, tenetur cumque explicabo ipsum. Iste, nesciunt?</p>
+
+    <!-- *****************word wrap************************* -->
+    <h1>4.Word Wrap</h1>
+    
+</body>
+</html>

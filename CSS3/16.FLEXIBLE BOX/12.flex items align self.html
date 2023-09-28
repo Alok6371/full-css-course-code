@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex item Align self</title>
+    <style>
+        .container{
+            display: flex;
+            background: blue;
+            padding: 10px;
+            align-items: center;
+            color: white;
+            height: 400px;
+            width: auto;
+        }
+        .container>div{
+            background: pink;
+            width: 130px;
+            line-height: 80px ;
+            margin: 10px;
+            text-align: center;
+
+        }
+        #flex-item-2{
+            align-self: stretch;
+            /* align-self: flex-start; */
+            /* align-self: flex-end; */
+            /* align-self: center; */
+            /* align-self: baseline; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div id="flex-item-2">2</div>
+        <div>3</div>
+    </div>
+    <h2>flex-start:</h2>
+    <p>align a flex item to the start of the cross axis. </p>
+
+    <h2>flex-end:</h2>
+    <p>align a flex item to the end of the cross axis.</p>
+
+    <h2>center:</h2>
+    <p>align s flex item tothe center of the cross axis.</p>
+
+    <h2>stretch:</h2>
+    <p>default; stretch a flex item to fill the container.</p>
+
+    <h2>baseline:</h2>
+    <p>align a flex item such as it is baseline are aligned with other baselines.</p>
+</body>
+
+</html>

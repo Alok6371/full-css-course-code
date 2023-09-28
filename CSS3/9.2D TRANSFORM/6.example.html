@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        *{
+            transition-duration: 5s;
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: lightgrey;
+            border-top: 5px solid black;
+        }
+        .translate:hover{
+            transform: translate(30px ,40px);
+        }
+        .rotate:hover{
+            transform: rotate(3400000deg);
+        }
+        .scale:hover{
+            transform: scale(.5);
+        }
+        .skew:hover{
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Tap everyone for move the function</h1>
+    <div class="translate">Translate me</div>
+    <br>
+    <div class="rotate">Rotate me </div>
+    <br>
+    <div class="scale">Scale me </div>
+    <br>
+    <div class="skew">Skew me</div>
+</body>
+</html>

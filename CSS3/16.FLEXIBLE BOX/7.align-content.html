@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-content</title>
+    <style>
+        p{
+            font-size: large;
+        }
+        .container {
+            display: flex;
+            align-content: flex-start;
+            background: blue;
+            padding: 5px;
+            height: 300px;
+            flex-wrap: wrap;
+            /* height: auto; */
+            /* if give height auto then the div present in the container */
+            
+            /* align-content: flex-end; */
+            /* align-content: center; */
+            /* align-content: stretch; */
+            /* align-content: space-between; */
+            /* align-content: space-around; */
+            /* align-content: space-evenly; */
+        }
+
+        .container>div {
+            line-height: 100px;
+            width: 100px;
+            background: yellow;
+            text-align: center;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+    </div>
+    <h2>stretch:</h2>
+    <p>flex items are stretched to take the remaining space</p>
+
+    <h2>flex-start</h2>
+    <p>packs items to the start of the flex container creoss start</p>
+
+    <h2>flex-end</h2>
+    <p>pack items to the start of the flex container cross end </p>
+
+    <h2>center</h2>
+    <p>packs items to the center towards the center of alignment of the cross axis </p>
+
+    <h2>space-between</h2>
+    <p>distributes flex items evenly within the alighnment of the cross axis ; the space between adjacant (any two)items
+        is equal;the first line is at the start of the cross axis and the last is at the end.</p>
+
+    <h2>space-around</h2>
+    <p>distributes flex items evenly within alighnment of the cross axis with equal space around each line</p>
+</body>
+
+</html>

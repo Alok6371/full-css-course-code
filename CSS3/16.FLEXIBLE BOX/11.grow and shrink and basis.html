@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basis and shrink and grow</title>
+    <style>
+        .container{
+            display: flex;
+            background: blue;
+            padding: 10px;
+        }
+        .container>div{
+            height: 100px;
+            width: 100px;
+            background: yellow;
+            margin: 10px;
+        }
+
+        #box1{
+            flex: 1 100px;
+        }
+        #box2{
+            flex: 1 100px;
+        }
+        #box3{
+            flex: 3 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1">1</div>
+        <div id="box2">2</div>
+        <div id="box3">3</div>
+    </div>
+</body>
+</html>

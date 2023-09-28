@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIENT GRADIENT</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+        }
+
+        .ec {
+            background-image: radial-gradient(blue, red, green);
+        }
+
+        .po {
+            background-image: radial-gradient(blue 20%, green 50%, pink 50%);
+        }
+
+        .el {
+            background-image: radial-gradient(ellipse at center, blue, red, yellow);
+        }
+
+        .ci {
+            background-image: radial-gradient(circle at center, green, yellow, pink);
+        }
+        .pos{
+            background-image: radial-gradient(circle at 0% 30% ,red,yellow,green);
+        }
+        .rep{
+            background-image: repeating-radial-gradient(red 20%,yellow 40%,green 40%   )
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1. Ecclipse, Center</h1>
+    <div class="ec"></div>
+
+    <h1>2.POSITIONING</h1>
+    <div class="po"></div>
+
+    <h1>3.SET SHAPE(ELLIPSE)</h1>
+    <div class="el"></div>
+
+    <h1>3.SET SHAPE(CENTER)</h1>
+    <div class="ci"></div>
+
+    <h1>4.POSITIONING</h1>
+    <div class="pos"></div>
+
+    <h1>5.REPRET</h1>
+    <div class="rep"></div>
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing function</title>
+    <style>
+        *{
+            color: white;
+        }
+        @keyframes myAnimation {
+            from {
+                background: rgb(16, 62, 201);
+                top: 0;
+                left: 00px;
+
+            }
+
+            to {
+                background: pink;
+                top: 200px;
+                left: 200px;
+            }
+        }
+
+        div.ease {
+            animation-timing-function: ease;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: rgb(117, 0, 128);
+            animation-name: myAnimation;
+            animation-duration: 2s;
+
+        }
+        div.linear{
+            animation-timing-function: linear;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: rgb(128, 0, 19);
+            animation-name: myAnimation;
+            animation-duration: 2s;
+        }
+        div.ease-in{
+            animation-timing-function: ease-in;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: rgb(108, 150, 108);
+            animation-name: myAnimation;
+            animation-duration: 2s;
+        }
+        div.ease-out{
+            animation-timing-function: ease-out;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: rgb(203, 201, 52);
+            animation-name: myAnimation;
+            animation-duration: 2s;
+        }
+        div.ease-in-out{
+            animation-timing-function: ease-in-out;
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background: green;
+            animation-name: myAnimation;
+            animation-duration: 2s;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="ease"> ease</div>
+    <br>
+    <br>
+    <div class="linear">linear</div>
+    <br><br>
+    <div class="ease-in">ease-in</div>
+    <br><br>
+    <div class="ease-out"> ease-out</div>
+    <br><br>
+    <div class="ease-in-out"> ease-in-out</div>
+</body>
+
+</html>

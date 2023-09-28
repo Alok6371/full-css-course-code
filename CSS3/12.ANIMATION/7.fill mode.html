@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill mode</title>
+    <style>
+        @keyframes myani {
+            from{
+                width: 200px;
+                height: 200px;
+            }
+            to{
+                width: 400px;
+                height: 400px;
+            }
+            
+        }
+
+        div>img{
+            height: 100px;
+            width: 100px;
+            background: red;
+            border: 2px solid rgb(174, 52, 52);
+            animation-name: myani;
+            animation-duration: 2s;
+
+            /* animation-fill-mode: forwards; */
+            /* if you forward perpoty then image will stop on to  position */
+            
+            /* animation-fill-mode: backwards; */
+
+            /* animation-fill-mode: both; */
+            /* if you forward perpoty then image will stop on to  position */
+            
+            /* animation-fill-mode: none; */
+
+        }
+    </style>
+</head>
+<body>
+    <div><img src="1.jpg" alt=""></div>
+</body>
+</html>

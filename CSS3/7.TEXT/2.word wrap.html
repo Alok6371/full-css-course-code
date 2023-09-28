@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word wrap</title>
+    <style>
+        .normal {
+            word-wrap: normal;
+        }
+
+        .break-word {
+            /* word-wrap: break-word; */
+            word-break: keep-all;
+            /* word-break: break-all; */
+        }
+
+        p {
+            width: 250px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The longest word in the divtionary</h1>
+    <p>1. <code>Word-wrap:normal</code></p>
+    <p class="normal">Pneumonoulutramicroscipicsilicovolcanoconiosis</p>
+    <p>2. <code>word-wrap:breakword</code>
+    <p class="break-word">Pneumonoulutramicroscipicsilicovolcanoconiosis</p>
+
+</body>
+
+</html>

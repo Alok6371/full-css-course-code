@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline and Inline Block</title>
+    <style>
+        span.inline-element {
+            display: inline;
+
+            /* *********************width and height*************** */
+            /* it doesnot allow to the width and height vlaue */
+            width: 35px;
+            height: 1359px;
+
+            /* ****************margin and padding******************* */
+            margin: 10px;
+            padding: 10px;
+
+            border: 1px solid rgb(202, 66, 66);
+            color: red;
+            background: lightgray;
+        }
+
+        span.inline-block-element {
+            /* it allow to height and width value */
+            display: inline-block;
+
+            /* *********************width and height*************** */
+            width: 100px;
+            height: 100px;
+
+            /* ****************margin and padding******************* */
+            margin: 10px;
+            padding: 10px;
+
+            border: 2px solid green;
+            background: lightgray;
+            color: red;
+        }
+        span.block-element{
+            /* it block the ful line  */
+            display: block;
+            color: red;
+            background: lightgreen;
+            border: 2px solid black;
+        }
+        span.block-inline-element{
+            /* block-inline is take space what si required */
+            background: lightgreen;
+            display: block inline;
+            border: 2px solid black ;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Inline Element</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est iste nobis at eveniet voluptatibus
+        <span class="inline-element">Heloo Alok</span> <span class="inline-element">Good morning</span>unde corrupti
+        sit, eaque voluptates? Tenetur ullam cumque facere?
+    </p>
+
+    <h3>Inline-block Element</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore doloribus atque unde cum facere. Esse sed in
+        nobis officiis illum<span class="inline-block-element">Heloo Alok</span> <span class="inline-block-element">Good
+            morning</span> eligendi culpa provident voluptateFacere itaque, rerum dolorem magni cumque
+        molestiaeexexercitationem ullam ipsum sequi soluta enim, aperiam dolores natus maxime ipsa nobis. Assumenda?</p>
+
+    <h3>block</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet non in, neque beatae similique ipsum, <span class="block-element">Alok Pradhan</span> <span class="block-element">Good morning</span> tempore, dolorem perferendis est veritatis ipsam culpa dolor animi earum rem tenetur esse voluptatem dignissimos. Commodi accusantium officia quasi nam! Officia officiis sed harum, consectetur cum velit, aspernatur deserunt porro, nihil nemo vel eaque veniam?</p>
+
+    <h3>Block-inline-element</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste alias ut nostrum accusamusspan.blo distinctio consequatur, soluta obcaecati in atque totam <span class="block-inline-element">Alok pradhan</span><span class="block-inline-element">i am very Happy</span>dolore iure blanditiis corporis cumque corrupti quas. Tenetur debitis suscipit obcaecati quo quia repellendus, eligendi maiores ratione nemo tempore, eveniet deleniti. Amet asperiores ipsa tempore doloribus itaque neque, blanditiis nisi?</p>
+</body>
+
+</html>

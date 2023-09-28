@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div {
+            /* ********************overflow-x********************* */
+            /* overflow-x: auto; */
+            /* overflow-x:hidden ; */
+            /* overflow-x: scroll; */
+            /* overflow-x: visible; */
+
+            /* ********************overflow-y********************* */
+            /* overflow-y: auto; */
+            /* overflow-y:hidden ; */
+            /* overflow-y: scroll; */
+            /* overflow-y: visible; */
+
+            /* *********overflow-x and overflow-y******** */
+            /* overflow: hidden scroll; */
+            /* overflow: scroll hidden; */
+            overflow: scroll scroll;
+
+            scroll-snap-type: none;
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+
+        div::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Hello World!</p>
+        <p>63712775379064613543215135456453135465123151234567899606004962078480863524645165415465</p>
+        <p>Alok Pradhan</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repudi exercitationem a id,Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat error officiis eum, facilis, consectetur asperiores odit distinctio quia laudantium nihil eligendi inventore sed! ut</p>
+    </div>
+</body>
+
+</html>

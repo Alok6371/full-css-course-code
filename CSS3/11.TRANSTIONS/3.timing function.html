@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing function</title>
+    <style>
+        div {
+            height: 100px;
+            width: 100px;
+            background: blue;
+            transition-property: height, width, background;
+            transition-duration: 2s;
+
+        }
+
+        .ease:hover {
+            height: 300px;
+            width: 300px;
+            background: red;
+            transition-timing-function: ease;
+        }
+
+        .linear:hover {
+            height: 300px;
+            width: 300px;
+            background: green;
+            transition-timing-function: linear;
+        }
+
+        .ease-in:hover {
+            height: 300px;
+            width: 300px;
+            background: pink;
+            transition-timing-function: ease-in;
+        }
+
+        .ease-out:hover {
+            height: 300px;
+            width: 300px;
+            background: yellow;
+            transition-timing-function: ease-out;
+        }
+
+        .ease-in-out:hover {
+            height: 300px;
+            width: 300px;
+            background: aqua;
+            transition-timing-function: ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1.Ease</h1>
+    <div class="ease"></div>
+
+    <h1>2.linear</h1>
+    <div class="linear"></div>
+
+    <h1>3.Ease-in</h1>
+    <div class="ease-in"></div>
+
+    <h1>4.Ease-out</h1>
+    <div class="ease-out"></div>
+
+    <h1>5.Ease-in-out</h1>
+    <div class="ease-in-out"></div>
+
+
+</body>
+
+</html>

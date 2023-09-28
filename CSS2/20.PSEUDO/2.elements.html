@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elements</title>
+    <style>
+        /* <!-- *********************After************************** --> */
+        .true::after {
+            content: "->True";
+            color: green;
+            font-size: 20px;
+        }
+
+        .false::after {
+            content: "->False";
+            color: yellow;
+            font-size: 20px;
+        }
+
+        /* <!-- ********************Before************************ --> */
+        .true2::before {
+            content: "Yes";
+            color: red;
+            font-size: 20px;
+        }
+
+        .false2::before {
+            content: "No Can`t ";
+            font-size: 20px;
+            color: pink;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li::before {
+            content: "Bold->";
+            font-weight: bold;
+            color: blue;
+            /* background-color: red; */
+        }
+
+        /* li:hover{
+            font-weight: bold;
+        }
+        li{
+            transition-duration: 2s;
+        } */
+
+
+        /* <!-- *****************first Letter********************** --> */
+        .f3::first-letter {
+            text-decoration: underline overline;
+            font-size: 250%;
+            color: red;
+        }
+
+        /* <!-- *****************first Line********************* --> */
+        .f4::first-line {
+            color: rgb(255, 255, 255);
+            background: #179090;
+            /* word-spacing: 23px; */
+            /* background-color: green; */
+
+        }
+
+        /* <!-- *****************Selection************************** --> */
+        .f5::selection,
+        textarea::selection {
+            color: rgb(227, 227, 227);
+            background-color: #496cdc;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- *********************After************************** -->
+    <h1>After</h3>
+    <p class="true">Birds can Fly</p>
+    <p class="false">Monkey can Fly</p>
+
+    <!-- ********************Before************************ -->
+    <h1>Before</h1>
+    <p class="true2"> Birds Are fly.</p>
+    <p class="false2">Monkey Can flu</p>
+    <ul class="li">
+        <li>Apple</li>
+        <li>Orange</li>
+    </ul>
+
+    <!-- *****************first Letter************************** -->
+    <h1>First Letter</h1>
+    <p class="f3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed nobis minima quam.</p>
+
+    <!-- *****************first Line************************** -->
+    <h1>First Line</h1>
+    <p class="f4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ullam nam nobis. Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Consequatur, similique ratione aut sed consectetur maxime ducimus numquam
+        nam magni nostrum, molestiae in ipsum nisi repudiandae. Nobis quidem distinctio possimus odio assumenda quos
+        commodi deleniti doloremque quod, quisquam maxime nam, consequuntur repudiandae eius, nulla iusto fuga dolor
+        corporis deserunt id suscipit repellendus facilis. Autem iure quisquam culpa excepturi asperiores amet cum eum
+        atque explicabo id, aliquam alias impedit qui maiores consequuntur quibusdam vero ut odio tempore perspiciatis a
+        officia facilis molestiae ab! Iusto sunt, atque accusamus id aut ad modi aperiam asperiores velit molestias
+        error aliquam nulla! Reiciendis libero ipsa eum, vel corporis optio inventore atque ipsum animi? Nisi tempore
+        voluptas, autem vel nam iusto! Deserunt autem earum, ipsam fugiat architecto nemo illo ea?</p>
+
+
+    <!-- *****************Selection************************** -->
+    <h1>Selection</h1>
+    <div class="f5">Hello Alok! Trying the select the character</div>
+    <textarea> Hello Alok pradhan</textarea>
+</body>
+
+</html>

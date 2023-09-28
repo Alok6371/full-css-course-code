@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play state</title>
+    <style>
+        @keyframes running {
+            from {
+                top: 0;
+                /* left: 200px; */
+            }
+
+            to {
+                top: 500px;
+            }
+        }
+
+        .running {
+            animation-name: running;
+            animation-duration: 5s;
+            animation-play-state: running;
+            background: #173459;
+        }
+
+        .paused {
+            animation-name: runnign;
+            animation-duration: 5s;
+            animation-play-state: paused;
+        }
+
+        div {
+            animation-name: running;
+            position: relative;
+            height: 100px;
+            width: 150px;
+            background: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="running">My animation is currently playing.</div>
+    <br>
+    <br>
+    <div class="paused">My animation is currently paused.</div>
+</body>
+
+</html>

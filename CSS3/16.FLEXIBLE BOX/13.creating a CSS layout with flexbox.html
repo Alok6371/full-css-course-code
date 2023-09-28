@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            color: white;
+        }
+        html{
+            position: relative;
+            min-height: 100%;
+        }
+        body{
+            margin: 0 0 10vh;
+        }
+        footer{
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+        header,footer{
+            background: blue;
+            height: 10vh;
+            padding:20px ;
+        }
+        article,nav,aside{
+            width:33.33%;
+            padding: 20px;
+        }
+        nav{
+            background: rgb(8, 170, 83);
+        }
+        article{
+            height: 80vh;
+            background: pink;
+        }
+        aside{
+            background: gold;
+        }
+        main{
+            display: flex;
+        }
+
+        @media screen and (max-width:575px) {
+           main{
+               display: block;
+        }
+        article,nav,aside{
+            width: 100%;
+        }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>Header</header>
+    <main>
+        <nav>Nav Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic voluptatum debitis sunt ut, temporibus autem velit non adipisci harum. Voluptatum, veritatis laudantium. Eos ea corporis possimus culpa sint aspernatur minima officiis quisquam molestias, maxime distinctio ad tempore praesentium, eum ab tenetur dolores necessitatibus. Ducimus, modi vero! Ducimus dolores nam nostrum a dolore, tempore ipsam quisquam laudantium non expedita placeat eaque dolorem voluptates. Dolores quae sunt excepturi praesentium eaque asperiores id mollitia, quos enim deleniti fugiat, adipisci exercitationem ea aut, temporibus repudiandae animi impedit tempore ex! Officiis aliquid quas aut aperiam alias sequi rerum voluptatum, dicta debitis minima dolorem sapiente? Rem tempora modi voluptatum autem odio fugit, non aut tempore minima ipsam obcaecati repudiandae cumque quasi. Exercitationem commodi blanditiis amet alias! Nihil, cum saepe.</nav>
+        <article>Article Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur saepe consequatur, aliquid sed officiis ratione, atque libero fugiat sint eum quibusdam quaerat dignissimos amet voluptates dolorum ipsa repellendus sunt quae numquam quam quisquam quasi facilis. Totam, nostrum quasi voluptatibus ullam atque repellat doloribus eum architecto assumenda ex delectus officia, ea repudiandae quos suscipit in perspiciatis facilis sapiente expedita labore natus temporibus. Nostrum placeat officia qui ea culpa, quia impedit, voluptas vero perferendis consequatur voluptates a iste deleniti ad animi harum iusto voluptate obcaecati laborum deserunt at minima? Id quo consequatur dolores pariatur. Impedit inventore est, molestiae voluptatem temporibus laudantium iure eos tenetur nihil sapiente maxime? Nemo unde itaque nihil sapiente excepturi aliquid cupiditate magni ab natus, fugit veniam repellat quae cumque nulla temporibus.</article>
+        <aside>Aside Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos eius perspiciatis cumque, ipsa dolorum obcaecati, animi assumenda mollitia id eum quia blanditiis suscipit atque quo ex. Eius nobis ducimus, odit architecto sapiente suscipit velit consectetur dignissimos, nulla ab optio quisquam maxime praesentium illum eveniet. Dolorum sapiente sint dolores velit ipsum pariatur ipsa veritatis, placeat consequatur cum omnis, cumque reprehenderit similique error soluta ullam non consectetur suscipit tempore blanditiis minima hic. Omnis blanditiis deserunt magnam doloribus odit. Voluptatum possimus hic dolor repudiandae ut explicabo reiciendis mollitia aliquam sequi, consectetur saepe magnam temporibus suscipit harum iste nemo sunt, officia labore earum id odit quidem, maxime exercitationem non? Ipsa nihil laboriosam recusandae ad vitae hic maxime asperiores dicta quaerat ea beatae sed deleniti labore, cupiditate ullam.</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>

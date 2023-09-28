@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Type</title>
+    <style>
+        body {
+            background-color: rgb(33, 177, 177);
+            height: 2000px;
+        }
+
+        a[title] {
+            color: red;
+        }
+
+        /* <!-- ***************************=******************** --> */
+
+        a[title="alok"]:hover {
+            border: 2px solid black;
+        }
+
+        /* <!-- ***************************~=******************** --> */
+
+        a[title~="codeliber"] {
+            color: green;
+        }
+
+        /* <!-- ***************************|=******************** --> */
+        div[lang|="en"] {
+            color: red;
+        }
+
+        div[lang|="zh"] {
+            color: blue;
+        }
+
+        /* <!-- ***************************^=******************** --> */
+
+        
+        a[href^="4"] {
+            color: rgb(211, 45, 53);
+        }
+        a[href^="sect"] {
+            color: green;
+        }
+
+        /* <!-- ***************************$=******************** --> */
+        a[href$=".org"]{
+            color: green;
+        }
+
+    /* <!-- ****************************=******************** --> */
+        a[href*="nki"]{
+            color: blueviolet;
+        }
+        a[href*="vid"]{
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Example:</h1>
+    <p>Go to <a href="Http://Example.com"> Example.com</a></p>
+    <p>Go to <a href="Http://Example.com" title="example"> Example.com</a>( With titile Attribute)</p>
+
+    <h1>Type</h1>
+
+    <!-- ***************************=******************** -->
+    <h2>1.&nbsp;&nbsp;&nbsp;= It change the perpoty exact same value</h2>
+    <p>Go to <a href="1.jpg" title="css">Image</a></p>
+    <p>Go to <a href="1.jpg" title="alok"> Image</a></p>
+
+    <!-- ***************************~=******************** -->
+    <h2>2.&nbsp;&nbsp;&nbsp;~= It change the perpoty of the given same like title name </h2>
+    <p>Go to <a href="1.jpg" title="codeliber">Image</a></p>
+    <p>Go to <a href="1.jpg" title="codeliber css">Image</a></p>
+    <p>Go to <a href="1.jpg" title="css codeliber">Image</a></p>
+    <p>Go to <a href="1.jpg" title="html codeliber css">Image</a></p>
+    <p>Go to <a href="1.jpg" title="codelibers">Image</a></p>
+    <p>Go to <a href="1.jpg" title="codeliber-css">Image</a></p>
+
+    <!-- ***************************|=******************** -->
+    <h2>3.&nbsp;&nbsp;&nbsp;|= It take the lang ki first word </h2>
+    <div lang="en-US"> Hello Alok </div>
+    <div lang="en-GB"> Hello Alok</div>
+    <div lang="en-AU">Hello Alok</div>
+    <div lang="zh-Cn"> Chinesse code</div>
+    <div lang="zh-fn"> Functional</div>
+
+    <!-- ***************************^=******************** -->
+    <h2>4.&nbsp;&nbsp;&nbsp;^= it perpoty take the first letter and change perpoty / prefix </h2>
+    <p>Go to <a href="4://nbdfjab.com"> Example.com</a></p>
+    <p>Go to <a href=" sect#section1">Section #1</a></p>
+    <!-- <h3 id="section1" style="margin-top: 2000px;margin-bottom: 1000px;"> Section #1</h3> -->
+
+    <!-- ***************************$=******************** -->
+    <h2>5.&nbsp;&nbsp;&nbsp;$= it perpoty take thelast letter and change perpoty / suffix </h2>
+    <p>Go to <a href="httt://nbdfjab.com"> Example.com</a></p>
+    <p>Go to <a href="httt://nbdfjab.org"> Example.com</a></p>
+
+    <!-- ****************************=******************** -->
+    <h2>6.&nbsp;&nbsp;&nbsp;*= whose value contain at least one occurance of value within string (text) </h2>
+    <p>Go to <a href="porttyy.nki"> Example.com</a></p>
+    <p>Go to <a href="xxxxxxxxxxxx.vid"> Example.com</a></p>    
+
+
+
+</body>
+
+</html>

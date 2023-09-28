@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Image</title>
+    <style>
+        div{
+            margin: 100px;
+            width: 250px;
+            height: 250px;
+        }
+        #border-1{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("2.jpg") round 50;
+        }
+        #border-2{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("2.jpg") round 20%;
+        } #border-3{
+            border: 10px solid transparent;
+            padding: 15px;
+            border-image: url("2.jpg") fill 30;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="border-1"></div>
+    <div id="border-2"></div>
+    <div id="border-2"></div>
+</body>
+</html>

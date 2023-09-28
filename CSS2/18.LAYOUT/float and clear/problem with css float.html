@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem</title>
+    <style>
+        img{
+            height: 200px;
+            float: right;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div{
+            border: 1px solid black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h3>Without clearfix</h3>
+    <div>
+        <img src="7.jpg" alt="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis tempora excepturi
+        obcaecati possimus saepe quasi accusamus inventore earum, necessitatibus expedita facilis ea reprehenderit
+        praesentium placeat minus voluptatem tenetur voluptates ratione dicta maiores quam eum dolorem repellendus.
+        Fugiat, reprehenderit. Amet vero omnis numquam autem ducimus commodi assumenda a, alias velit debitis. Aut
+        pariatur quisquam.
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h3>with clearfix</h3>
+    <div class="clearfix">
+        <img src="6.jpg" alt="">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore at consequatur, velit corrupti, voluptatum necessitatibus officiis perspiciatis laudantium pariatur molestiae sequi quidem quisquam placeat commodi perferendis harum consequuntur! Exercitationem officiis libero nam ipsam consectetur esse nisi aliquam eius dolorum. Nam explicabo consequatur vero incidunt dignissimos!
+    </div>
+</body>
+
+</html>

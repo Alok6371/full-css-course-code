@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Shrink and flex Basis</title>
+    <style>
+        .container{
+            display: flex;
+            background: blue;
+            width: 500px ;
+            padding: 10px;
+    
+        }
+        .container>div{
+            flex-basis: 130px ;
+            height: 100px;
+            background: yellow;
+            margin: 5px;
+            /* display: flex;
+            align-items: center;
+            justify-content: center; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="flex-shrink: 1;">1</div>
+        <div style="flex-shrink: 1;">2</div>
+        <div style="flex-shrink: 3;">3</div>
+        <div style="flex-shrink: 2;">4</div>
+        <div style="flex-shrink: 1;">5</div>
+    </div>
+
+
+
+    <h1>flex-shrink:</h1>
+    <p>Set how much a flex item should shrink relative to it is sibiling (otherflex item in the flex container) if neccessary</p>
+
+    <h1>flex-basis:</h1>
+    <p>defines the intial width of the flex item .it can be grow  or shrink if neccesary</p>
+</body>
+</html>

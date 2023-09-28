@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short hand</title>
+    <style>
+        .transition-1{
+            transition: margin-top 2s;
+        }
+        .transition-2{
+            transition: margin-top 2s ease-in;
+        } .transition-3{
+            transition: margin-top 2s ease-in-out;
+        } .transition-4{
+            transition: margin-top 2s linear;
+        }
+
+
+        div{
+            height: 100px;
+            width: 100px;
+            background: blue;
+            color: white;
+            margin-top: 0;
+        }
+        div:hover{
+            margin-top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>Tap the element to see how they work</p>
+    <div class="transition-1">transition-1</div>
+    <br>
+    <div class="transition-2">transition-2</div>
+    <br>
+    <div class="transition-3">transition-3</div>
+    <br>
+    <div class="transition-4">transition-4</div>
+
+</body>
+</html>

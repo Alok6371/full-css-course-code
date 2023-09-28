@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transition</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background: lightgrey;
+            border: 5px solid black;
+            transition-duration: 2s;
+        }
+        #rotatex:hover{
+            transform: rotateX(140deg);
+        }
+        #rotatey:hover{
+            transform: rotateY(1400deg);
+            border-radius: 50% ;
+
+        }#rotatez:hover{
+            border-radius: 50% ;
+            transform: rotateZ(14000deg);
+        }
+    </style>
+</head>
+<body>
+    <p> Tap the element to triger the effect</p>
+    <div id="rotatex">RotateX me </div>
+    <br>
+    <div id="rotatey">RotateY me</div>
+    <br>
+    <div id="rotatez"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text shadow</title>
+    <style>
+        body {
+            height: 1000px;
+        }
+
+        .d1{
+            height: 400px;
+            border: 2px solid black;
+            justify-content: center;
+            align-content: center;
+            display: fl;
+        }
+
+        .p1{
+            /* text-shadow: 200px 20px 3px orange; */
+            /* text-shadow: 0 0 3px orange; */
+            /* text-shadow: 0 0 3px orange,0 0 6px green; */
+            text-shadow: -100px 0 orange, 0 20px green, 100px 0px blue, 0px -50px yellow;
+        }
+       
+        .d21{
+            /* box-shadow: 10px 5px  #173459; */
+            /* box-shadow: 10px 5px 5px 3px  #173459; */
+            box-shadow: -10px -5px 5px 3px #173459;
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="d1">
+        <h1>Text Shadow </h1>
+        <p style="text-align: center;font-size: 140%;" class="p1"> Hello Alok </p>
+    </div>
+
+    <div class="d2">
+        <h1>Box shadow </h1>
+       <div class="d21" style="width: 200px; height: 200px; background: green;"></div>
+    </div>
+</body>
+
+</html>

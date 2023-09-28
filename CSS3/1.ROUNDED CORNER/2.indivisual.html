@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indivisual Radious</title>
+    <style>
+        body {
+            background-color: aquamarine;
+            height: 2000px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            padding: 30px;
+            background-color: #173459;
+            color: white;
+        }
+
+        h1 {
+            text-align: left;
+            text-decoration: underline;
+        }
+
+        /* ******************one Value***************** */
+        .onevalue {
+            border-top-right-radius: 12px;
+            border-top-left-radius: 24px;
+            border-bottom-right-radius: 50%;
+            border-bottom-left-radius: 50%;
+        }
+
+        /* ******************Two Value***************** */
+        .twovalue {
+            border-radius: 24px 50%;
+        }
+
+        /* ******************Three Value***************** */
+
+        .threevalue {
+            border-radius: 10px 20% 50%;
+        }
+
+        .fourvalue{
+            border-radius: 25% 25% 25% 25% ;
+            position: absolute;
+            height: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- /* ******************one Value***************** */ -->
+
+    <div class="onevalue">
+        <h1>One Value:</h1>
+        <h2> All four conner</h2>
+    </div>
+
+    <!-- /* ******************Two Value***************** */ -->
+
+    <div class="twovalue">
+        <h1>Two Value</h1>
+        <h2>1. t-l and b-r</h2>
+        <h2>2.t-r and b-l</h2>
+    </div>
+
+    <!-- /* ******************Three Value***************** */ -->
+    <div class="threevalue">
+        <h1>Three Value</h1>
+        <h2>1.t-l </h2>
+        <h2>2.t-r and b-l</h2>
+        <h2>3.b-r</h2>
+    </div>
+
+    <!-- /* ******************Three Value***************** */ -->
+    <div class="fourvalue">
+        <h1>FourValue</h1>
+        <h2>1.t-l </h2>
+        <h2>2.t-r </h2>
+        <h2>3.b-l</h2>
+        <h2>4.b-r</h2>
+    </div>
+
+</body>
+
+</html>

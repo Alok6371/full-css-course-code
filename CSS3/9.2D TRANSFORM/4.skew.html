@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skew</title>
+    <style>
+        body{
+            background-color: black;
+            color: #ffffff;
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            /* background: lightgreen; */
+        }
+        .skewed{
+            transform: skew(30deg,30deg);
+            color: blueviolet;
+            background-color: pink;
+        }
+        .skewed-1{
+            transform: skew(-30deg,-30deg);
+            color: chocolate;
+            background: chocolate;
+        }
+        .skewx-1{
+            transform: skewX(45deg);
+            background-color:#1ddddd;
+        }
+        .skewx-2{
+            transform: skewX(-45deg);
+            background-color: #fe2424;
+        }
+        .skewy-1{
+            transform: skewY(45deg);
+            background-color:#1ddddd;
+        }
+        .skewy-2{
+            transform: skewY(-45deg);
+            background-color: #fe2424;
+        }
+    </style>
+</head>
+<body>
+    <h1>1.Skew</h1>
+    <div class="skewed">I am skewed</div>
+    <div class="skewed-1">i am skewed</div>
+
+    <h1>2.SkewX()</h1>
+    <div class="skewx-1">I am skewed</div>
+    <div class="skewx-2">I am skewed</div>
+
+
+    <h1>3.SkewY-3</h1>
+    <div class="skewy-1">I am skewed</div>
+    <div class="skewy-2">I am skewed</div>
+
+    
+
+
+</body>
+</html>

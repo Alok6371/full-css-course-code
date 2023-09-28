@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        /* <!-- ***********static************************* --> */
+        /* .static {
+            position: static;
+            width: 200px;
+            height: 200px;
+            background: #903C56;
+            color: white;
+        } */
+
+
+        /*  ************relative**********************  */
+        /* .relative {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            left: 25px;
+            top: 25px;
+            background: green;
+        } */
+
+        /*  ************fixed**********************  */
+        /* div{
+            position: fixed;
+            width: 100px;
+            height: 100px;
+            top: 20px;
+            right: 20px;
+            background: red;
+        } */
+        /*  ************absolute**********************  */
+        .container{
+            position: relative;
+            background: black;
+            height: 600px;
+            width: 600px;
+        }
+        .absolute{
+            position: absolute;
+            height: 50px;
+            width: 50px;
+            background: green;
+            bottom: 10px;
+            right: 20px;
+        }
+        /*  ************text on an image**********************  */
+        /* div{
+            position: relative;
+        }
+        img{
+            width: 100%;
+        }
+        .top-left{
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+         .top-right{
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        }
+        .center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* transform: translate(50%,50%);
+            font-size: 20px;
+        }
+        .bottom-left{
+            position: absolute;
+            bottom: 50px;
+            left: 20px;
+        }
+        .bottom-right{
+            position: absolute;
+            bottom: 50px;
+            right: 20px;
+        } */
+
+        /*  ************Sticky**********************  */
+        /* body {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+            background: #ffffff;
+        }
+
+        div {
+            position: sticky;
+            position: -webkit-sticky;
+            width: 100%;
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            font-size: 18px;
+            top: 0px;
+            left: 0px;
+        }
+
+        .div1 {
+            background: green;
+        }
+
+        .div2 {
+            background: blue;
+        }
+        .div3{
+            background: aqua;
+        }
+        .div4{
+            background: orange;
+        } */
+
+        /* ***************Stacking Content********* */
+        /* div{
+            position: fixed;
+            padding: 0;
+            margin: 0;
+            height: 100px;
+            width: 100px;
+        }
+        .div1{
+            z-index: 5;
+            background: firebrick;
+            top: 30px;
+            left: 30px;
+        }
+        .div2{
+            z-index:6;
+            background: orange;
+            top: 60px;
+            left: 60px;
+        }
+        .div3{
+            z-index:8;
+            background:blue;
+            top: 90px;
+            left: 90px;
+        }
+        .div4{
+            z-index: 9;
+            background: purple;
+            top: 120px;
+            left: 120px;
+        }
+        .div5{
+            z-index: 12;
+            background: rgb(70, 198, 16);
+            top: 150px;
+            left: 150px;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <!-- ******************static****************************** -->
+    <!-- <div class="static">Alok Pradhan</div> -->
+
+    <!-- ******************relative****************************** -->
+    <!-- <div class="relative">Alok Pradhan</div> -->
+
+    <!-- ******************fixed****************************** -->
+    <!-- <div></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consequatur aliquam amet!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, ex voluptas, distinctio voluptate id tenetur
+        dolor eaque rem doloribus nulla harum debitis dolorum aut voluptatum eligendi inventore libero temporibus nihil
+        atque dicta mollitia sed.</p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, odio! Natus voluptatum sint laudantium, tenetur
+    accusamus harum quis adipisci similique illo tempora, dolorem aliquid quo! Similique, aspernatur illum.
+    Exercitationem qui itaque doloribus voluptas, aut illo enim fugit sunt aliquam velit ipsa minima, ipsam ea ex
+    cupiditate corporis reiciendis magni consequuntur ab pariatur quod? Sint eligendi omnis fugit vel illo rerum dolores
+    in, eveniet quasi fuga aperiam deserunt repellat porro eaque asperiores placeat obcaecati. Amet sapiente, fugit,
+    nesciunt non quas, doloremque ut necessitatibus reprehenderit voluptas quia cupiditate illum velit eius quae.
+    Dolores ex sapiente quam molestias, animi nihil deserunt ea, amet accusantium cumque fugit rerum doloremque? Officia
+    aperiam optio possimus. Error ullam quia eveniet pariatur suscipit neque minima ut numquam, voluptatum impedit quod
+    at.
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores distinctio blanditiis quos rem facilis dicta
+        harum ex culpa, esse, facere porro suscipit totam, error repudiandae omnis libero velit accusantium. Commodi
+        molestias voluptas ullam. Ipsam nulla, vitae sint quia nihil est provident praesentium? Architecto pariatur
+        maxime sunt quis vel eius sequi illo error rem. Neque tenetur ad repellendus adipisci recusandae, dolorem eum
+        ipsam pariatur ipsum illo iusto ut corporis id voluptates, temporibus eos sed tempora possimus maxime, magni
+        iste quibusdam eius. Quas, aliquam dolorum debitis asperiores a saepe laboriosam, repudiandae odio accusamus
+        impedit aliquid distinctio porro, consequuntur inventore eos itaque rerum molestias suscipit dicta error
+        repellendus provident maiores? Deserunt, nesciunt optio repellat temporibus expedita ea atque laborum nihil rem
+        accusantium, cumque itaque veniam recusandae deleniti quod libero facere sapiente tempora porro iure corrupti
+        obcaecati ab doloremque veritatis. Facere magni labore blanditiis ut explicabo delectus iure aspernatur
+        accusantium, natus ducimus eos tempore quasi adipisci, rerum eveniet est exercitationem quo nulla unde, ullam
+        sapiente dolorem dolor! Ipsum, numquam fugiat laboriosam ad soluta iste quae praesentium nostrum aliquam dolor
+        deserunt neque omnis commodi quia optio mollitia repellendus. Reprehenderit architecto, deleniti inventore,
+        voluptatum quibusdam voluptates quia harum magnam dolorem mollitia quidem labore? Deleniti tempora culpa
+        mollitia repellat ab incidunt adipisci perferendis ipsa magnam dicta eius consequatur, architecto, repellendus,
+        cupiditate deserunt cum voluptates dolores magni fugiat maxime dolor odit nisi eos at. Est inventore ipsam
+        distinctio, libero quibusdam consequatur ducimus.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore alias magnam natus eius sint placeat aliquid ex
+        cum laborum vitae omnis, quasi officia consequuntur veniam quibusdam exercitationem incidunt odit aut? Odio ipsa
+        quos mollitia, rerum minus quo facilis quisquam a provident non, doloremque quae nulla tempore! Similique
+        voluptates porro, harum a sed magnam consectetur laborum quo facere et, neque accusantium dignissimos ratione
+        odit voluptas in dolore. Distinctio, eius excepturi optio dolor qui quibusdam enim voluptate nulla at quod error
+        omnis earum, facilis magni quasi repellat tempore saepe atque porro id accusamus perferendis? Repellendus ab rem
+        voluptate magni cum debitis totam sequi neque. Ut similique consequatur deleniti cum repudiandae porro rem
+        animi. Sequi soluta veniam molestias voluptatum vero iure delectus consequatur facere sapiente alias?</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit quaerat quos non molestias odio dolorum
+        deleniti necessitatibus. Perspiciatis temporibus fugiat voluptatem nisi magni eos fugit et accusamus unde earum.
+        Laborum fuga iusto labore at dolorum rerum, ipsum ratione? Animi laborum obcaecati non voluptas ab ipsa commodi
+        voluptatem rerum tenetur doloremque distinctio ad tempora quibusdam dolor dolore, deleniti blanditiis alias eius
+        eos? Voluptatibus facilis hic quas distinctio eos et voluptates unde necessitatibus delectus, quos recusandae
+        eum quisquam architecto ullam quo iure quasi libero nesciunt quibusdam vero, aperiam blanditiis minus doloribus
+        maxime! Officiis ipsum repudiandae, dicta consectetur veritatis quod a dolores velit molestias, itaque quam
+        officia! Adipisci earum sequi, incidunt voluptate quos perspiciatis tenetur, ullam, autem quis at impedit rem
+        minus eveniet deserunt minima atque recusandae itaque. Iure minus aliquam dolorum rem, tenetur magni. Neque odio
+        eaque beatae earum quibusdam at obcaecati accusantium magnam dolorum ea rerum minima provident dolor accusamus
+        molestiae facere, aut eius molestias doloribus consequatur adipisci, omnis corporis et. Debitis, voluptatem
+        architecto repudiandae hic consequatur, sed vero, officia expedita praesentium dicta quae. Id porro, eligendi
+        deleniti a reprehenderit nulla voluptates vero obcaecati perferendis, eos, veritatis assumenda. Accusamus,
+        dolorem nam amet, voluptatem asperiores illo rem dolores veniam, nostrum deserunt soluta officia eaque
+        distinctio. Tenetur commodi ullam sed velit dolorem, fugiat, porro beatae molestias ducimus distinctio, aliquid
+        sapiente ab aspernatur iure! Dolor quia culpa nobis, quos sint laborum blanditiis quibusdam mollitia hic tempore
+        sunt quis?</p> -->
+
+    <!-- /*  ************absolute*********************  */ -->
+    <div class="container">
+            <div class="absolute"></div>
+        </div>
+
+
+    <!-- /*  **********Text on an image****************  */ -->
+    <!-- <div >
+            <img src="2.jpg" >
+            <p class="top-left">top-left</p>
+            <p class="top-right">top-right</p>
+            <p class="center">💓💓</p>
+            <p class="bottom-left">bottom-left</p>
+            <p class="bottom-right">bottom-center</p>
+
+        </div> -->
+
+    <!-- /*  **********Sticky****************  */ -->
+    <!-- <div class="div1">
+        Hello World! I am Alok Pradhan</div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum velit facere, esse cum quae in voluptatum
+        consequuntur quaerat, earum reiciendis adipisci modi non necessitatibus provident commodi laborum temporibus?
+        Quae ab laboriosam dignissimos repellendus corrupti!</p>
+    </div>
+    <div class="div2">
+        Hello World! I am Alok Pradhan</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, nulla? Modi delectus ex commodi, sapiente amet
+        molestiae, officia error neque nesciunt repudiandae nobis, sint dolore quis. Corporis, modi dicta? Velit, a
+        eveniet perspiciatis, sequi, beatae dolore rem ipsa officiis similique ratione dolorum? Facere saepe accusantium
+        impedit doloribus architecto ullam reprehenderit praesentium veniam dicta similique? Molestiae consequuntur
+        quisquam quaerat qui velit laborum nobis ut molestias quos, cupiditate animi exercitationem ipsum saepe eius,
+        harum beatae blanditiis et, rerum nulla! Et culpa ducimus voluptates rerum Lorem ipsum dolor sit amet,
+        consectetur adipisicing elit. Reprehenderit praesentium porro libero itaque ab commodi sapiente dignissimos sunt
+        dolorum iste laboriosam quae tempore, soluta consequuntur necessitatibus enim doloremque dolore cupiditate
+        nesciunt! Maiores quis ratione alias ullam odit provident consequatur saepe rerum voluptas. Fuga, odit facere,
+        ratione dolores numquam repudiandae blanditiis perferendis nostrum, explicabo rerum obcaecati eius provident
+        laborum corrupti expedita maxime. Placeat ea vero atque tempore fugit modi quasi, maxime quas quis ipsam
+        deserunt adipisci nesciunt libero voluptate sint magni vitae, repellendus ab. Ex aliquid dolores, distinctio
+        blanditiis nemo iste inventore repudiandae quidem tenetur odit quos ad numquam rerum reiciendis exercitationem
+        sequi nulla repellat non sapiente dolorem magni adipisci ipsam ab voluptatibus? Culpa, ullam ad? Omnis
+        laudantium ipsa quaerat sint asperiores necessitatibus nobis!vitae sapiente! Quos, nesciunt atque quidem
+        cupiditate eos esse similique officiis molestias veritatis porro non? Quasi voluptas iusto pariatur suscipit
+        voluptatum quas debitis, error molestias veritatis, explicabo nesciunt earum quae amet. Nostrum aliquam,
+        sapiente alias tenetur inventore quisquam ipsam sed aperiam.</p>
+    <div class="div3">
+        Hello World! I am Alok Pradhan</div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias, deleniti. Exercitationem consequuntur
+        perspiciatis numquam at mollitia! Ad placeat sit quidem quisquam sint natus provident repudiandae nihil fuga,
+        mollitia consequatur fugiat aliquam possimus deserunt quae atque optio harum enim debitis Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Recusandae voluptate asperiores similique quis odit accusantium eveniet ex.
+        Numquam nisi, neque odit soluta reiciendis eum enim tempora quae cum et minima nemo ut sint qui quidem nulla,
+        sit asperiores repellendus iusto rem est! Culpa harum placeat vero. Fugit, placeat architecto nam dolore quasi
+        accusantium harum? Aperiam iusto error Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe commodi officiis quia quasi laborum error! Animi aliquam alias ipsam sint eos, voluptates nam illum hic soluta modi rem nihil provident eius? Qui soluta nisi ipsa suscipit asperiores voluptatibus voluptate. Perspiciatis maiores ipsam provident cum, quibusdam sit vitae pariatur saepe et! In libero assumenda eaque ratione necessitatibus, neque aperiam sunt consequatur molestias ducimus, excepturi illo esse eligendi aliquam inventore laudantium vel rem dolorem tempora id temporibus harum! Perferendis deleniti natus placeat ex modi reprehenderit, magni assumenda veritatis, corporis error sit praesentium qui pariatur provident suscipit fugit officiis est sunt officia neque aspernatur sequi? Omnis sed consequatur voluptates deleniti necessitatibus odit dicta sapiente labore voluptatem quam nobis, consequuntur laudantium officiis est natus expedita nam.23alias. Pariatur voluptates mollitia ut error, exercitationem, ratione eum
+        distinctio beatae dignissimos voluptatibus quas, delectus dolor expedita animi! Dicta possimus vitae accusantium
+        assumenda numquam deserunt quos pariatur suscipit dignissimos quae, eligendi velit illo ipsum porro ad
+        laudantium atque maiores! Distinctio fugiat ipsa consectetur nobis, ab ducimus hic placeat dolor reiciendis,
+        minus animi eum. Non similique, assumenda maiores officia reprehenderit quidem fuga minima debitis veniam sequi
+        tenetur!ut? In, facere. Ex, reiciendis fuga.</p>
+    <div class="div4">
+        Hello World! I am Alok Pradhan</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam repellendus explicabo fugiat odit consequatur
+        laudantium sequi sit exercitationem aperiam delectus hic, itaque doloremque! Exercitationem reprehenderit dolore
+        vero quidem itaque autem sapiente atque impedit recusandae error nam dolores, nulla placeat, quae possimus
+        dignissimos ad cupiditate commodi odit numquam eos sed? Nihil quibusdam eos qui accusantium ipsa voluptatibus
+        asperiores. Quidem laudantium saepe nisi ex repellat laborum sint labore, nemo dolores vel officiis ullam non
+        recusandae illo, vitae vero iste, ipsa eligendi? Sequi sint quae blanditiis, suscipit ab accusamus doloribus
+        laudantium velit obcaecati? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa assumenda similique
+        aperiam architecto eaque at repellat est voluptatem, hic iusto perferendis sint a dicta harum animi dolor neque
+        ad officiis? Maiores cumque iste eius velit? Nesciunt vel sunt fuga culpa, enim distinctio ipsum dolorum
+        voluptatibus aut, at maiores odio Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores a voluptates est, natus nam, hic velit laudantium autem veniam commodi repellendus dicta suscipit quisquam ab animi at rem ipsam tempora aliquam dignissimos ipsa, qui distinctio aperiam pariatur. Dolore repudiandae ad enim labore, corporis adipisci corrupti eos ipsa reiciendis rerum in consequatur quaerat totam expedita? Reprehenderit tenetur adipisci rerum voluptatem quasi laudantium nostrum aspernatur suscipit a recusandae quos laborum unde mollitia harum, alias officia corrupti sunt in totam maxime autem ipsam iure sit aliquam? Corrupti sapiente iure commodi accusamus tempore minus enim doloribus porro vero ipsum ut culpa, dolorem doloremque illo nostrum? Et saepe doloribus ipsa dicta distinctio, ipsam laudantium asperiore Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, a harum ducimus modi itaque blanditiis velit incidunt beatae! Mollitia illum ducimus debitis fugiat recusandae. Numquam iusto impedit fuga amet ipsum repudiandae vitae obcaecati adipisci alias nam asperiores, esse voluptas! Quas commodi possimus enim eligendi ducimus illum doloremque cumque quam. Numquam, atque illum at laboriosam amet aliquid neque accusamus fugiat qui eius cupiditate, voluptas optio dolorem totam rerum a deserunt accusantium. Repudiandae architecto obcaecati atque aliquam error assumenda tempore rem culpa magnam ullam, iure asperiores quisquam adipisci consectetur reiciendis officia consequuntur tempora excepturi libero provident, vel itaque fugit alias nulla! Iusto, ducimus harum dolore vero in expedita dolores voluptas illo corrupti earum suscipit quasi eius placeat deleniti. Tempore fugit ad rem at. Obcaecati, facere.s deserunt quis recusandae neque hic officiis incidunt quaerat amet veniam ducimus dolorem ratione? eum reiciendis consectetur. Fuga nobis optio corporis delectus dolore
+        deleniti, fugit, voluptate suscipit, voluptatem minima quae cupiditate quibusdam tenetur doloremque voluptates
+        soluta? Aliquid animi libero fugiat porro velit soluta, maiores est eaque, minima fuga labore dignissimos.
+        Doloribus assumenda ratione possimus qui sint eveniet deserunt inventore repudiandae adipisci temporibus. Unde
+        hic officia, mollitia veritatis ullam vel commodi inventore! Veniam quam reiciendis quaerat aut temporibus vero
+        libero ratione, ipsa sed nostrum velit exercitationem qui quo dolore.</p>
+    </div> -->
+    <!-- *************stacking Content*********** -->
+    <!-- <div class="div1">Hii</div>
+    <div class="div2">Hii</div>
+    <div class="div3">Hii</div>
+    <div class="div4">Hii</div>
+    <div class="div5">Hii</div> -->
+
+</body>
+
+</html>

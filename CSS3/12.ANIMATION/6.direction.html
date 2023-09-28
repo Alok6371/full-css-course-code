@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Direction</title>
+    <style>
+        @keyframes myani{
+            from{
+                background: gold;
+                left: 0;
+            }
+            to{
+                background: pink;
+                left: 300px;
+            }
+        }
+        div{
+            height: 100px;
+            width: 100px;
+            position: relative;
+            background-color: green;
+            animation-name: myani;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            /* animation-direction: normal; */
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+
+        we have defind the <i> <u>animation-iteration-count</b></u> css perpoty to see how
+            <i><u>animation-direction</u></i> property works.
+    </h1>
+    <div></div>
+</body>
+
+</html>

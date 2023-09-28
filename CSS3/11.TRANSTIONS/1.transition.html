@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .without-transition{
+            width: 100px;
+            height: 100px;
+            background: black;
+        }
+        .with-transition{
+            width: 100px;
+            height: 100px;
+            background: black;
+            transition-property: width;
+            transition-duration: 2s;
+            /* transition-delay: .2s; */
+        }
+        div:hover{
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Tap element to seee how it works </p>
+    <p>Without Css <b>Transition </b> perpoties</p>
+    <div class="without-transition"></div>
+    <p>With Css <b>Transition </b> perpoties.</p>
+    <div class="with-transition"></div>
+
+
+</body>
+
+</html>

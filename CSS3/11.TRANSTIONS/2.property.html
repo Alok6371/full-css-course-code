@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition property</title>
+    <style>
+        * {
+            color: white;
+        }
+        h1{
+            color: blue;
+        }
+
+        .h {
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            transition-property: height;
+            transition-duration: 2s;
+        }
+
+        .w {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(189, 31, 31);
+            transition-property: width, height, backgrounf;
+            transition-duration: 2s;
+        }
+        .a:hover{
+            width: 300px;
+            height: 300px;
+            background: #173459;
+            transition-duration: 2s;
+        }
+        .app{
+            width: 100px;
+            height: 100px;
+            background: #903C56;
+            transition-property: height ,width ,background;
+            transition-duration: 2s;
+
+        }
+        .app:hover{
+            width: 200px;
+            height: 200px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Differnet animation</h1>
+    <div class="a">
+        <div class="h">height</div>
+        <div class="w">weight</div>
+    </div>
+    <!-- *******************Like app***************** -->
+    <br>
+    <br><br><br>
+    <h1>Tap the element to see how it works </h1>
+    <div class="app">
+
+    </div>
+</body>
+
+</html>

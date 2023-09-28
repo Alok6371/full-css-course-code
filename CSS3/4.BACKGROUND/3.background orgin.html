@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Origin</title>
+    <style>
+        div{
+            color: white;
+            width: 300px;
+            height: 300px;
+            border: 10px double black;
+            padding: 20px;
+            background-size: 228px;
+            background-image: url("2.jpg");
+            background-repeat: no-repeat;
+            
+        }
+        .bo{
+            background-origin: border-box;
+
+        }
+        .pa{
+            background-origin:padding-box;
+        
+        }
+        .co{
+            background-origin: content-box;
+            background-size: 200px 228px ;
+        }
+    </style>
+</head>
+<body>
+    <h1>1.Border box</h1>
+    <div class="bo">Alok Pradhan</div>
+
+    <h1>2.Padding Box</h1>
+    <div class="pa">Alok Pradhan</div>
+
+    <h1>3.content-box</h1>
+    <div class="co">Alok Pradhan</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delay</title>
+    <style>
+        @keyframes myanimation {
+            from{
+                background: gold;
+                top: 0;
+                left: 200px;
+
+            }
+            to{
+                background: green;
+                top: 200px;
+                left: 200px;
+            }
+            
+        }
+        div{
+            animation-name:myanimation ;
+            width: 100px;
+            height: 100px;
+            background: red;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            position: relative;
+
+        }
+    </style>
+</head>
+<body>
+    <p>The animation will start after one second</p>
+    <div></div>
+</body>
+</html>
